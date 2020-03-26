@@ -1,0 +1,25 @@
+{
+  "name": "review",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "agwenchez"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
