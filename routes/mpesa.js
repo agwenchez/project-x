@@ -60,8 +60,8 @@ router.get('/register', access,(req,res)=>{
         json:{
             "ShortCode":"600427",
             "ResponseType":"Complete",
-            "ConfirmationURL":"https://mpesos.herokuapp.com//confirmation",
-            "ValidationURL":"https://mpesos.herokuapp.com//validation",
+            "ConfirmationURL":"https://mpesos.herokuapp.com/confirmation",
+            "ValidationURL":"https://mpesos.herokuapp.com/validation",
         }
     },(err, response, body)=>{
         if(err){
