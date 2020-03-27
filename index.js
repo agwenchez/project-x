@@ -20,9 +20,16 @@ mongoose.connect("mongodb://localhost:27017/mpesa",
 // set static folder
  app.use(express.static(path.join(__dirname, 'public')));
 
- //serve routes
 
+
+app.get('/', (req,res)=>{
+    res.json({msg:"welcome to mpesa gateway integrations"})
+})
+ 
+ //serve routes
  app.use('/users', require('./routes/users'));
  app.use('/mpesa', require('./routes/mpesa'));
+ app.use('/confirmation', require('./routes/confirmation'));
+ app.use('/validation', require('./routes/validation'));
 
  app.listen(PORT, ()=>console.log(`App listening on PORT ${PORT}`))
