@@ -43,8 +43,6 @@ router.get('/simulate', access, (req,res)=>{
 
 })
 
-
-
 router.get('/register', access,(req,res)=>{
     
     let url = "https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl"
